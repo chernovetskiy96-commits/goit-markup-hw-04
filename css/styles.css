@@ -139,17 +139,26 @@ a {
 
 .main-criterias-list {
     padding: 120px 0;
+    
 }
 
 .main-criteriars-block {
     width: calc((100% - 72px) / 4);
+    position: relative;
 }
 
 .criterias-icons {
-    position: relative;
+   position: absolute;
     border: 1px solid #F4F4FD;
-    background-color: #E7E9FC;
-    border-radius: 4px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 264px;
+        height: 112px;
+        border-radius: 4px;
+        background-color: #E7E9FC;
+        padding: 24px 100px;
+        bottom: 100%;
 }
 
 .main-criterias-items {
@@ -193,15 +202,64 @@ a {
     justify-content: space-evenly;
     gap: 24px;
     border-radius: 0px 0px 4px 4px;
+    
 }
 
 .team-icon {
     width: calc((100% - 24px * 3) / 4);
     border-radius: 0px 0px 4px 4px;
+    
 }
 
 .name-and-profesinal {
     padding: 32px 0;
+}
+
+.team-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.team-names {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.team-page {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    
+}
+
+.social-icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms;
+    margin: 35px 11px 1px;
+    cursor: pointer;
+}
+
+.social-icons:hover, 
+.social-icons:focus {
+    background-color: #31D0AA;
+}
+
+.svg-icon {
+    transform: translate(20%, 20%);
 }
 
 .header-logo .logo-part {
@@ -277,33 +335,6 @@ a {
 
 .team-icon {
     background-color: #FFFFFF;
-}
-
-.team-title {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-
-.team-names {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-}
-
-.team-page {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
 
 .our-portfolio {
