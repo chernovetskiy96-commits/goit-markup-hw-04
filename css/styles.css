@@ -93,6 +93,8 @@ a {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
+    transform: translateX(100%);
+    transition: transform 300ms;
 }
 
 .nav-link:hover::after {
@@ -102,6 +104,7 @@ a {
     height: 4px;
     background: #404bbf;
     display: flex;
+    transform: translate(0);
 }
 
 .list {
@@ -389,15 +392,36 @@ a {
 }
 
 .portfolio-icon {
+    position: relative;
     width: calc((100% - 48px) / 3);
     border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
 }
+
+.portfolio-icon:hover .portfolio-overlay {
+    transform: translate(0);
+}
+
+ .portfolio-overlay {
+    background-color: #4d5ae5;
+    color: #f4f4fd;
+    padding: 40px 32px 164px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+    transform: translateY(150%);
+    transition: transform 300ms;
+ }
 
 
 .footer-section {
     background-color: #2e2f42;
     height: 312px;
     padding: 100px 0;
+    position: relative;
 }
 
 .footer-page {
@@ -421,4 +445,22 @@ a {
     flex-wrap: wrap;
     padding: 100px 0 0 156px;
     flex-direction: column;
+}
+
+.social-media-title {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+}
+
+.social-media-icons {
+    position: absolute;
+    top: 100px;
+    left: 540px;
+}
+
+.social-media-icons .social-icons {
+    margin: 16px;
+    margin-left: 0;
 }
