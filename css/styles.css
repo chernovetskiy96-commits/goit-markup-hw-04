@@ -96,26 +96,24 @@ a {
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-    transform: translateX(100%);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
-    color: #404bbf;
 }
 
-.nav-link:hover::after {
-    border-radius: 2px;
-    height: 4px;
-    background: #404bbf;
-    display: flex;
-    transform: translate(0);
-    content: "";
+
+.nav-link:hover::after 
+ {
+    content: '';
     width: 100%;
     position: absolute;
     left: 0;
     bottom: -1px;
+    height: 4px;
+    background: #404bbf;
+    border-radius: 2px;
+    display: flex;
 }
 
-.address-item {
+.address-link {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -136,6 +134,7 @@ a {
         url(../images/hero-background.jpg);
         max-width: 1440px;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     
 }
@@ -160,6 +159,9 @@ a {
 
 .main-criteriars-block {
     width: calc((100% - 72px) / 4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .criterias-icons-container {
@@ -230,6 +232,12 @@ a {
     width: calc((100% - 24px * 3) / 4);
     border-radius: 0px 0px 4px 4px;
     
+}
+
+.team-icon:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .name-and-profesinal {
@@ -515,6 +523,7 @@ a {
 .social-icons-element {
     width: 40px;
     height: 40px;
+    
 }
 
 .social-icon-link {
@@ -525,6 +534,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:hover,
